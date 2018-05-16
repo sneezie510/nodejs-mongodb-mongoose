@@ -22,6 +22,13 @@ app.get('/messages', (req, res) => {
   })
 })
 
+app.get('/messages/:user', (req, res) => {
+  var user = req.params.user
+  Message.find({name: user}, (err, messages) => {
+    res.send(messages)
+  })
+})
+
 // In order to work with await, we will need to declare our express function as async.
 // async/await is similar to promises. Promises give us another option of how to work 
 // with asynchronous code. Promises return an object which promise to do some work. 
