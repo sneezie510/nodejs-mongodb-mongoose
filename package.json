@@ -1,8 +1,7 @@
 {
   "name": "lynda-nodejs",
   "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
+  "main": "app.js",
   "scripts": {
     "test": "jasmine",
     "start": "node server.js"
@@ -13,11 +12,21 @@
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.3",
+    "lodash": "^4.17.10",
     "mongoose": "^5.1.1",
     "socket.io": "^2.1.0"
   },
   "devDependencies": {
     "jasmine": "^3.1.0",
     "request": "^2.86.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sneezie510/nodejs-mongodb-mongoose.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sneezie510/nodejs-mongodb-mongoose/issues"
+  },
+  "homepage": "https://github.com/sneezie510/nodejs-mongodb-mongoose#readme",
+  "description": ""
 }
